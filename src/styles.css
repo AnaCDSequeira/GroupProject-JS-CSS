@@ -1,0 +1,32 @@
+.flex{
+    display: flex;
+}
+
+.new-season-items{
+    justify-content: space-around;
+    list-style: none;
+}
+
+.text-and-button{
+    justify-content:space-between;
+  
+}
+
+.button-link{
+    text-decoration: none;
+    color:black;
+}
+.new-season-item{
+    width: 25%;
+    border: 1px solid peru;
+    border-radius: 9px;
+    padding: 6px;
+  
+}
+
+.new-season-item-img{
+    
+    
+    padding: 10px;
+    width: 80%;
+}
