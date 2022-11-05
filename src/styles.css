@@ -73,15 +73,8 @@ body {
 @media (max-width: 720px) {
   .new-season-items {
     display: flex;
-    /* grid-template-columns: 1fr; */
-
     flex-direction: column;
-    /* width: 100%;
-  margin-left: 5%;
-  margin-right: 20%; */
-
     margin-top: 50px;
-
     align-content: space-around;
     gap: 18px;
   }
@@ -94,5 +87,14 @@ body {
     width: 35%;
     box-shadow: 1px 1px 4px #194455;
   }
-  
+
+  .new-season-text{
+    text-align: center;
+  }
+}
+
+@media (max-width:450px){
+  .new-season-text{
+    font-size: 24px;
+  }
 }
