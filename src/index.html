@@ -4,7 +4,336 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" src="index.js"></script>
     <title>MindStore</title>
   </head>
-  <body></body>
+  <body>
+    <!-- HEADER -->
+    <nav class="navbar">
+      <div class="logo"><a href="index.html">MIND/STORE</a></div>
+      <ul class="header-navbar">
+        <li>
+          <a href="#">Login</a>
+        </li>
+        <li>
+          <a href="#">Register</a>
+        </li>
+        <li>
+          <ion-icon name="cart-outline" class="header-cart"></ion-icon>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- SECTION 1-->
+
+    <div class="section-one">
+      <div
+        class="section-one-image"
+        style="background: url(../images/section_one.png) no-repeat"
+      >
+        <div class="banner-content">
+          <h2 class="title">New Collection</h2>
+          <p class="text-one">
+            Discover all the latest trends.
+            <br />
+            New collection available.
+          </p>
+          <button class="banner-button btn--size">View Products</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- SUGGESTED ITEMS -->
+    <section>
+      <h1 class="new-season-text">Check out some of this season's best</h1>
+      <div class="new-season-items grid">
+        <div class="new-season-item">
+          <img
+            class="new-season-item-img"
+            src="../images/section_two_img1.jpg"
+            alt="A man in a blue suit"
+          />
+          <div class="flex text-and-button">
+            <h4>Suit</h4>
+            <button class="card--button">
+              <a class="button-link" href="">add</a>
+            </button>
+          </div>
+        </div>
+
+        <div class="new-season-item">
+          <img
+            class="new-season-item-img"
+            src="../images/section_two_img2.jpg"
+            alt="A man holding a light brown leather suitcase."
+          />
+          <div class="flex text-and-button">
+            <h4>The Bag</h4>
+            <button class="card--button">
+              <a class="button-link" href="">add</a>
+            </button>
+          </div>
+        </div>
+
+        <div class="new-season-item">
+          <img
+            class="new-season-item-img"
+            src="../images/section_two_img3.jpg"
+            alt="A man wearing a brown leather jacket."
+          />
+          <div class="flex text-and-button">
+            <h4>Jacket</h4>
+            <button class="card--button">
+              <a class="button-link" href="">add</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3 -->
+    <div class="section-three-container">
+      <div class="section-three-text">
+        <h2 class="section-three-title">On Sale -50%</h2>
+        <button class="button btn--size">View Products</button>
+      </div>
+      <div class="image">
+        <img src="../images/section_three.jpg" alt="on-sale" class="store" />
+      </div>
+    </div>
+
+    <!-- CAROUSSEL -->
+    <section class="section-4">
+      <div class="item-carrousel">
+        <input type="radio" name="slider" id="item-1" checked />
+        <input type="radio" name="slider" id="item-2" />
+        <input type="radio" name="slider" id="item-3" />
+        <div class="cards">
+          <label class="card" for="item-1" id="card-1">
+            <img src="../images/section_four_img1.jpg" alt="" />
+          </label>
+          <label class="card" for="item-2" id="card-2">
+            <img src="../images/section_four_img2.jpg" alt="" />
+          </label>
+          <label class="card" for="item-3" id="card-3">
+            <img src="../images/section_four_img3.jpg" alt="" />
+          </label>
+        </div>
+      </div>
+      <!-- FEEDBACK -->
+      <div class="item-feedback">
+        <div class="feedback-image-username">
+          <img
+            src="https://images.freeimages.com/variants/YbUZ4wa78JDUD2RcEQyqfYzU/f4a36f6589a0e50e702740b15352bc00e4bfaf6f58bd4db850e167794d05993d"
+            alt=""
+            class="user-image"
+          />
+          <p>Name</p>
+        </div>
+        <p class="feedback-text">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias
+          doloremque eum ducimus officia deserunt qui eius, dolor tempore
+          distinctio itaque molestiae? Blanditiis iure doloribus quaerat omnis
+          asperiores aperiam ut assumenda?
+        </p>
+      </div>
+      <!-- DETAILS -->
+      <div class="item-details">
+        <h3 class="item-title">Suit</h3>
+        <p class="item-descrition">
+          Straight fit blazer. Notched lapel collar and long sleeves with
+          buttoned cuffs. Welt pocket at chest and flap pockets at hip. Interior
+          pocket. Back vents at hem. Front button closure.
+        </p>
+        <button class="pick-color pick-color-1"></button>
+        <button class="pick-color pick-color-2"></button>
+        <button class="pick-color pick-color-3"></button>
+        <button class="pick-color pick-color-4"></button>
+        <p class="ref">Grey | 6145/323</p>
+        <p class="price">39,99€</p>
+        <div class="size">
+          <ul class="size-ul">
+            <li class="size-li">38</li>
+            <li class="size-li">40</li>
+            <li class="size-li">42</li>
+            <li class="size-li">44</li>
+            <li class="size-li">46</li>
+          </ul>
+        </div>
+        <div class="size-guide-container">
+          <a href="#" class="details-a">Find your size</a>
+          <a href="#" class="details-a">Size guide</a>
+        </div>
+        <button class="item-button">add to cart</button>
+        <p>
+          <a href="#" class="details-a">Check in store</a>
+        </p>
+        <p>
+          <a href="#" class="details-a">Shipping, changes and return</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- SECTION 5 -->
+    <section id="section-five">
+      <h1 class="related-items-text">Related Items</h1>
+      <div class="related-items">
+        <div class="related-item">
+          <img
+            class="related-item-img"
+            src="../images/section_five_img1.jpg"
+            alt="Two brown suits"
+          />
+          <div class="flex text-and-button">
+            <h4>Suits</h4>
+            <button class="card--button">
+              <a class="button-link" href="">add</a>
+            </button>
+          </div>
+        </div>
+
+        <div class="related-item">
+          <img
+            class="related-item-img"
+            src="../images/section_five_img2.jpg"
+            alt="Leather gloves"
+          />
+          <div class="flex text-and-button">
+            <h4>Gloves</h4>
+            <button class="card--button">
+              <a class="button-link" href="">add</a>
+            </button>
+          </div>
+        </div>
+
+        <div class="related-item">
+          <img
+            class="related-item-img"
+            src="../images/section_five_img3.jpg"
+            alt="Checked scarf"
+          />
+          <div class="flex text-and-button">
+            <h4>Scarf</h4>
+            <button class="card--button">
+              <a class="button-link" href="">add</a>
+            </button>
+          </div>
+        </div>
+
+        <div class="related-item">
+          <img
+            class="related-item-img"
+            src="../images/section_five_img4.jpg"
+            alt="Light brown briefcase"
+          />
+          <div class="flex text-and-button">
+            <h4>Briefcase</h4>
+            <button class="card--button">
+              <a class="button-link" href="">add</a>
+            </button>
+          </div>
+        </div>
+
+        <div class="related-item">
+          <img
+            class="related-item-img"
+            src="../images/section_five_img5.jpg"
+            alt="Watch"
+          />
+          <div class="flex text-and-button">
+            <h4>Watch</h4>
+            <button class="card--button">
+              <a class="button-link" href="">add</a>
+            </button>
+          </div>
+        </div>
+
+        <div class="related-item">
+          <img
+            class="related-item-img"
+            src="../images/section_five_img6.jpg"
+            alt="Leather wallet"
+          />
+          <div class="flex text-and-button">
+            <h4>Wallet</h4>
+            <button class="card--button">
+              <a class="button-link" href="">add</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="foot-links">
+        <ul class="anchor-list-left">
+          <li class="footer-title"><b>Shop</b></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Baby</a></li>
+          <li><a href="#">Kids</a></li>
+          <li><a href="#">Sport</a></li>
+        </ul>
+        <ul class="anchor-list-midle">
+          <li class="footer-title"><b>Corporate Info</b></li>
+          <li><a href="#">Carreer at Mind/Store</a></li>
+          <li><a href="#">About Mind/Store Group</a></li>
+          <li><a href="#">Sustainability</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">Investors</a></li>
+        </ul>
+        <ul class="anchor-list-right">
+          <li class="footer-title"><b>Help</b></li>
+          <li><a href="#">Customer Service</a></li>
+          <li><a href="#">My Account</a></li>
+          <li><a href="#">Store Locator</a></li>
+          <li><a href="#">Legal & Privacy</a></li>
+          <li><a href="#">Cookie Settings</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- MOBILE NAV BAR -->
+    <nav class="mobile-nav-bar flex">
+      <ul class="mobile-nav-bar-list flex">
+        <li class="mobile-nav-bar-item active">
+          <a class="nav-button-link" href="">
+            <span class="mobile-nav-bar-icon">
+              <ion-icon name="home-outline"></ion-icon>
+            </span>
+            <span class="mobile-nav-bar-text">Home</span>
+          </a>
+        </li>
+
+        <li class="mobile-nav-bar-item">
+          <a class="nav-button-link" href="#">
+            <span class="mobile-nav-bar-icon">
+              <ion-icon name="person-outline"></ion-icon>
+            </span>
+            <span class="mobile-nav-bar-text">Profile</span>
+          </a>
+        </li>
+
+        <li class="mobile-nav-bar-item">
+          <a class="nav-button-link" href="#">
+            <span class="mobile-nav-bar-icon">
+              <ion-icon name="cart-outline"></ion-icon>
+            </span>
+            <span class="mobile-nav-bar-text">Cart</span>
+          </a>
+        </li>
+        <div class="mobile-nav-bar-indicator"></div>
+      </ul>
+    </nav>
+
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+  </body>
 </html>
