@@ -1,20 +1,36 @@
-.section-3-container {
-    display: flex;
-    align-items: center;
-    width: 650px;
-    height: 300px;
-    margin-top: 50px;
-    justify-content:space-between ;
-    margin: auto;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.section-one-three-titles{
+.section-three-container {
+    display: flex;
+    align-items: center;
+    width: 700px;
+    height: 300px;
+    margin-top: 50px;
+    justify-content: space-between;
+    margin: auto;
+
+
+}
+
+.section-three-title {
     font-size: 26px;
     font-weight: bold;
     font-family: 'Nunito', sans-serif;
     line-height: 32px;
     padding-left: 30px;
     color: #032E3F;
+
+}
+
+.store {
+    width: 400px;
+    height: 220px;
+    border-radius: 9px;
+
 }
 
 .btn--size {
@@ -23,8 +39,8 @@
 }
 
 .button {
-    margin-left: 30px;
-    margin-top: 20px;
+    margin-left: 50px;
+    margin-top: 40px;
     font-family: 'Nunito', sans-serif;
     font-size: 12px;
     font-weight: bolder;
@@ -41,4 +57,66 @@
 
 .button:hover {
     background-color: #032E3F;
+}
+
+@media (max-width:720px) {
+    .section-three-container {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 400px;
+        height: 200px;
+        margin-top: 200px;
+    }
+
+    .section-three-title {
+        font-size: 24px;
+        margin-top: 20px;
+    }
+
+    .button {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width:450px) {
+    .section-three-container {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 400px;
+        height: 200px;
+        margin-top: 200px;
+    }
+
+    .section-three-title {
+        font-size: 24px;
+        margin-top: 20px;
+    }
+
+    .button {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width:370px) {
+    .section-three-container {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 200px;
+        height: 100px;
+        margin-top: 100px;
+    }
+
+    .section-three-title {
+        font-size: 18px;
+        margin-top: 20px;
+        padding-left: 50px;
+    }
+
+    .button {
+        margin-top: 20px;
+        font-size: 10px;
+    }
+    .section-three-text{
+        margin-right: 40px;
+    }
 }
