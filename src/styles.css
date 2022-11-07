@@ -1,0 +1,44 @@
+.section-3-container {
+    display: flex;
+    align-items: center;
+    width: 650px;
+    height: 300px;
+    margin-top: 50px;
+    justify-content:space-between ;
+    margin: auto;
+}
+
+.section-one-three-titles{
+    font-size: 26px;
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+    line-height: 32px;
+    padding-left: 30px;
+    color: #032E3F;
+}
+
+.btn--size {
+    width: 120px;
+    height: 25px;
+}
+
+.button {
+    margin-left: 30px;
+    margin-top: 20px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 12px;
+    font-weight: bolder;
+    background: #194455;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    box-shadow: 0px 1px 3px black;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.button:hover {
+    background-color: #032E3F;
+}
