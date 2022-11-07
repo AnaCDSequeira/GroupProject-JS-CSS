@@ -232,6 +232,42 @@ img {
   z-index: 1;
 }
 
+@media (max-width: 720px) {
+  .section-4 {
+    margin: 0 auto;
+    display: grid;
+    width: 500px;
+    height: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20px;
+    gap: 10px;
+    font-family: sans-serif;
+    grid-template-areas:
+      "c"
+      "d"
+      "f";
+  }
+
+  img {
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+
+  .item-details {
+    grid-area: d;
+    width: 400px;
+    height: 600px;
+    padding: 20px 30px;
+    border-radius: 10px;
+    margin-top: 450px;
+  }
+  .item-feedback {
+    height: 100%;
+  }
+}
+
 @media (max-width: 450px) {
   .section-4 {
     margin: 0 auto;

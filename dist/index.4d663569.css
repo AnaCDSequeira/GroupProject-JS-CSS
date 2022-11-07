@@ -216,6 +216,41 @@ img {
   transform: translateX(0)scale(1);
 }
 
+@media (max-width: 720px) {
+  .section-4 {
+    width: 500px;
+    height: 100%;
+    grid-template: "c" 20px
+                   "d"
+                   "f"
+                   / 1fr;
+    gap: 10px;
+    margin: 0 auto;
+    font-family: sans-serif;
+    display: grid;
+  }
+
+  img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .item-details {
+    width: 400px;
+    height: 600px;
+    border-radius: 10px;
+    grid-area: d;
+    margin-top: 450px;
+    padding: 20px 30px;
+  }
+
+  .item-feedback {
+    height: 100%;
+  }
+}
+
 @media (max-width: 450px) {
   .section-4 {
     width: 400px;
